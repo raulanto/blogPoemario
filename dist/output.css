@@ -434,8 +434,8 @@ video {
   display: none;
 }
 
-*{
-  @apply: m-0 p-0 box-border select-none ;
+* {
+  @apply: m-0 p-0 box-border select-none;
 }
 
 body {
@@ -456,7 +456,12 @@ h1 {
   font-weight: 900;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -573,9 +578,11 @@ h1,h2,h3,h4,h5,p {
 
 .header {
   display: flex;
-  justify-content: center;
+  height: 15rem;
+  align-items: flex-end;
+  justify-content: flex-start;
   --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
   padding: 0.5rem;
 }
 
@@ -622,7 +629,8 @@ h1,h2,h3,h4,h5,p {
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
-.cuerpo-texto,.cuerpo-texto2 {
+.cuerpo-texto,
+  .cuerpo-texto2 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -691,4 +699,18 @@ h1,h2,h3,h4,h5,p {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }

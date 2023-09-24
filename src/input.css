@@ -1,66 +1,80 @@
 @tailwind base;
 
 @layer base {
-  *{
-    @apply: m-0 p-0 box-border select-none ;
+  * {
+    @apply: m-0 p-0 box-border select-none;
   }
 
   body {
-    @apply flex flex-col min-h-screen  bg-neutral-50;
+    @apply flex flex-col min-h-screen bg-neutral-50;
   }
 
   main {
-    @apply flex-grow ;
+    @apply flex-grow;
   }
 
   h1 {
     @apply text-2xl font-black;
   }
-  h1,h2,h3,h4,h5,p{
-    @apply select-none
-  }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    @apply select-none;
+  }
 }
 
 @tailwind components;
 
-@layer components{
-  .footer{
-    @apply bg-neutral-200  p-4 flex justify-center items-center ;
+@layer components {
+  .footer {
+    @apply bg-neutral-200 p-4 flex justify-center items-center;
   }
-  .header{
-    @apply flex p-2 justify-center bg-neutral-200;
+
+  .header {
+    @apply flex p-2 justify-start items-end bg-pink-600 h-60 ;
   }
-  .main{
-    @apply flex ;
+
+  .main {
+    @apply flex;
   }
-  .figure-pink{
-    @apply w-96  p-3 bg-pink-700 rounded-md shadow-lg ;
+
+  .figure-pink {
+    @apply w-96 p-3 bg-pink-700 rounded-md shadow-lg;
   }
-  .titulo-3{
-    @apply mb-1 text-2xl font-black leading-tight text-neutral-200  ;
+
+  .titulo-3 {
+    @apply mb-1 text-2xl font-black leading-tight text-neutral-200;
   }
-  .titulo-2{
+
+  .titulo-2 {
     @apply text-white font-medium leading-tight text-xl;
   }
-  .titulo-4{
+
+  .titulo-4 {
     @apply text-neutral-900 text-base font-bold italic;
   }
-  .cuerpo-texto,.cuerpo-texto2{
-    @apply  text-sm text-inherit select-none font-serif  text-white ;
+
+  .cuerpo-texto,
+  .cuerpo-texto2 {
+    @apply text-sm text-inherit select-none font-serif text-white;
   }
-  .contenido{
-    @apply flex flex-col rounded-lg border border-neutral-100  bg-transparent ;
+
+  .contenido {
+    @apply flex flex-col rounded-lg border border-neutral-100 bg-transparent;
   }
-  .encabezado{
-    @apply flex p-3 my-3 bg-transparent  rounded-md border   border-neutral-100;
+
+  .encabezado {
+    @apply flex p-3 my-3 bg-transparent rounded-md border border-neutral-100;
   }
-  .card{
+
+  .card {
     @apply flex justify-center;
   }
 
 }
-
-
 
 @tailwind utilities;
