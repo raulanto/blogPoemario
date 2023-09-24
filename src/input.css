@@ -50,7 +50,7 @@
     @apply  text-sm text-inherit select-none font-serif  text-white ;
   }
   .contenido{
-    @apply flex flex-col rounded-lg border border-neutral-100  bg-transparent h-80 overflow-hidden;
+    @apply flex flex-col rounded-lg border border-neutral-100  bg-transparent ;
   }
   .encabezado{
     @apply flex p-3 my-3 bg-transparent  rounded-md border   border-neutral-100;
