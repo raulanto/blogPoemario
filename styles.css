@@ -1,0 +1,15 @@
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden; /* Oculta el contenido que excede la altura máxima */
+    max-height: 160px; /* Establece la altura máxima */
+    transition: tras 0.5s ease; /* Agrega una transición suave */
+}
+
+.content-full {
+    display: none;
+    transition: max-height 0.5s ease;
+}
+

@@ -35,7 +35,7 @@
   }
 
   .header {
-    @apply flex p-2 justify-start items-end bg-pink-600 h-60 ;
+    @apply flex p-2 justify-start items-end bg-pink-600 h-60;
   }
 
   .main {
@@ -43,7 +43,10 @@
   }
 
   .figure-pink {
-    @apply w-96 p-3 bg-pink-700 rounded-md shadow-lg;
+    @apply  w-96 p-3 bg-pink-500 rounded-xl shadow-lg;
+  }
+  .figure-amarillo{
+    @apply w-96 p-3 bg-yellow-600 rounded-md shadow-lg;
   }
 
   .titulo-3 {
@@ -59,20 +62,39 @@
   }
 
   .cuerpo-texto,
-  .cuerpo-texto2 {
+  .cuerpo-texto2,
+  .cuerpo-texto3 {
     @apply text-sm text-inherit select-none font-serif text-white;
   }
 
   .contenido {
-    @apply flex flex-col rounded-lg border border-neutral-100 bg-transparent;
+    @apply flex flex-col rounded-lg border border-neutral-100 bg-transparent ;
   }
 
   .encabezado {
     @apply flex p-3 my-3 bg-transparent rounded-md border border-neutral-100;
   }
 
+
+  .contenidoOculto {
+    @apply max-h-0 overflow-hidden  duration-500 ease-in-out;
+  }
+
+
+
   .card {
-    @apply flex justify-center;
+    @apply w-96 max-h-40 bg-pink-500 rounded-lg p-5 m-5 transition duration-500 ease-out;
+  }
+
+  .content-full {
+    @apply hidden transition duration-500 ease-out ;
+  }
+
+  .mostrar {
+    @apply max-h-screen;
+  }
+  .btn-1{
+    @apply px-2 py-1 text-pink-500  bg-pink-200 my-2 rounded-lg text-sm hover:bg-pink-700 hover:text-white;  
   }
 
 }

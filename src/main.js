@@ -10,13 +10,11 @@ function mostrarFechaActual() {
   // Mostrar la fecha en la etiqueta con el id "fecha"
   document.getElementById("fecha").innerHTML = fechaFormateada;
 }
-
-// Llamar a la función para mostrar la fecha actual cuando la página se cargue
 window.onload = mostrarFechaActual;
 
 // Define la función procesarParrafo
 function procesarParrafo(claseParrafo) {
-  // Obtén la referencia a la etiqueta <p> por su clase
+
   const parrafo = document.querySelector(claseParrafo);
 
   if (parrafo) {
@@ -26,7 +24,7 @@ function procesarParrafo(claseParrafo) {
     // Reemplaza las comas y puntos con comas y puntos seguidos de un salto de línea
     const contenidoModificado = contenidoOriginal.replace(/([,.])/g, "$1<br>");
 
-    // Establece el contenido modificado en la etiqueta <p>
+
     parrafo.innerHTML = contenidoModificado;
   } else {
     console.error("No se encontró un elemento con la clase proporcionada.");
@@ -35,3 +33,20 @@ function procesarParrafo(claseParrafo) {
 procesarParrafo(".cuerpo-texto");
 
 procesarParrafo(".cuerpo-texto2");
+procesarParrafo(".content-full");
+
+
+function procesarTarjeta(cardSelector, contentSelector, button) {
+  const card = document.querySelector(cardSelector);
+  const contentFull = document.querySelector(contentSelector);
+
+  if (contentFull.style.display === "none" || contentFull.style.display === "") {
+      contentFull.style.display = "block";
+      button.textContent = "Leer menos";
+      card.style.maxHeight = "none"; // Quita la altura máxima para que se ajuste al contenido
+  } else {
+      contentFull.style.display = "none";
+      button.textContent = "Leer más";
+      card.style.maxHeight = "160px"; // Establece la altura máxima nuevamente
+  }
+}
